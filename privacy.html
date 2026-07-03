@@ -60,7 +60,7 @@
 
 <header>
   <h1>Privacy Policy</h1>
-  <p>Outfit Oracle &mdash; Last updated April 5, 2026</p>
+  <p>Outfit Oracle &mdash; Last updated July 3, 2026</p>
 </header>
 
 <main>
@@ -77,27 +77,30 @@
       <strong>Location (approximate):</strong> Used once per session to retrieve your local weather so outfit recommendations match today's conditions. Location is not stored by us and is not used for any other purpose.
     </li>
     <li>
-      <strong>Photos:</strong> If you choose to add a photo to a wardrobe item, that image is stored locally on your device only. It is never uploaded to our servers.
+      <strong>Photos:</strong> Photos you add to wardrobe items are stored locally on your device. If you use the automatic item-recognition feature, the selected photo is securely sent through our proxy to a third-party AI provider to identify the item (name, type, and color). The photo is used only to process that request and is not stored by us afterward.
     </li>
     <li>
       <strong>Wardrobe &amp; Settings Data:</strong> Your clothing items, wear history, and preferences are stored locally on your device using device storage. This data never leaves your device.
     </li>
+    <li>
+      <strong>Anonymous App ID &amp; Usage Data:</strong> To prevent abuse and keep the service running, a third-party identity and analytics service assigns your app installation an anonymous identifier, and we count how many AI requests it makes each day. We use this data to enforce fair-use limits and to understand overall app usage in aggregate. This identifier is not linked to your name, email, or any other personal information.
+    </li>
   </ul>
 
   <h2>Third-Party Services</h2>
-  <p>Outfit Oracle uses the following third-party services:</p>
+  <p>Outfit Oracle relies on a small number of third-party service providers to operate. We share only the minimum data described below, and require these providers to protect it:</p>
   <ul>
     <li>
-      <strong>OpenWeather:</strong> Your approximate location (latitude/longitude) is sent to OpenWeather to retrieve current weather conditions. No personally identifying information is included.
-      See their <a href="https://openweather.co.uk/privacy-policy" target="_blank">privacy policy</a>.
+      <strong>Weather Provider:</strong> Your approximate location (latitude/longitude) is sent to a third-party weather service to retrieve current conditions. No personally identifying information is included.
     </li>
     <li>
-      <strong>OpenAI (via our secure proxy):</strong> Your wardrobe item list (names and colors) and the current weather are sent to an AI model to generate outfit recommendations. No personally identifying information is included. Requests pass through our own Cloud Function; your data is not stored by us after the request completes.
-      See <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI's privacy policy</a>.
+      <strong>AI Provider (via our secure proxy):</strong> Your wardrobe item list (names and colors), the current weather, any photo you submit for item recognition, and any occasion description you type are sent to a third-party AI provider to generate outfit recommendations and identify items. No personally identifying information is included. Requests pass through our own secure proxy; your data is not stored by us after the request completes.
     </li>
     <li>
-      <strong>RevenueCat:</strong> Used to manage in-app purchases and subscriptions. RevenueCat may collect a device identifier for purchase validation purposes.
-      See their <a href="https://www.revenuecat.com/privacy" target="_blank">privacy policy</a>.
+      <strong>Identity &amp; Analytics Provider:</strong> A third-party service issues an anonymous app identifier and stores an anonymous per-installation count of AI requests. This is used to enforce fair-use limits and for aggregate analytics, and contains no personal information.
+    </li>
+    <li>
+      <strong>Purchases Provider:</strong> A third-party service manages in-app purchases and subscriptions and may collect a device identifier for purchase validation purposes.
     </li>
   </ul>
 
@@ -108,7 +111,7 @@
 
   <h2>Data Retention</h2>
   <p>
-    All wardrobe data, wear history, and settings are stored locally on your device. Deleting the app removes all locally stored data. We do not retain any user data on our servers.
+    All wardrobe data, wear history, and settings are stored locally on your device. Deleting the app removes all locally stored data. On our servers we retain only a minimal, anonymous per-installation count of AI requests (associated with the anonymous App ID) to enforce usage limits and for aggregate analytics; this contains no personal information. Photos, weather, and recommendation requests sent to our proxy are not stored after the request completes.
   </p>
 
   <h2>Children's Privacy</h2>
